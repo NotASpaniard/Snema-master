@@ -1,0 +1,70 @@
+body {
+    background-color: #f8f9fc;
+}
+
+.card {
+    border: none;
+    border-radius: 0.35rem;
+    box-shadow: 0 0.15rem 1.75rem 0 rgba(58, 59, 69, 0.15);
+}
+
+.card-header {
+    background-color: #f8f9fc;
+    border-bottom: 1px solid #e3e6f0;
+}
+
+.chart-area {
+    position: relative;
+    height: 20rem;
+    width: 100%;
+}
+
+.chart-pie {
+    position: relative;
+    height: 15rem;
+    width: 100%;
+}
+
+#movieStatsTable {
+    font-size: 0.85rem;
+}
+
+#movieStatsTable th {
+    border-top: none;
+    background-color: #f8f9fc;
+}
+
+.progress {
+    height: 0.75rem;
+    border-radius: 0.35rem;
+}
+
+.progress-bar {
+    background-color: #4e73df;
+}
+
+@media (max-width: 768px) {
+    .chart-area,
+    .chart-pie {
+        height: 15rem;
+    }
+}
+
+.title-blink {
+    transition: color 0.2s, text-shadow 0.2s;
+}
+
+.title-blink:hover {
+    color: #4e73df;
+    text-shadow: 0 0 8px #4e73df, 0 0 16px #4e73df;
+    animation: blink 0.7s linear infinite alternate;
+}
+
+@keyframes blink {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0.6;
+    }
+}

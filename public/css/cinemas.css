@@ -1,0 +1,187 @@
+body {
+    background: #f6f7fb;
+    color: #222;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    padding-top: 60px;
+}
+
+.navbar {
+    background: #181818;
+    color: #fff;
+    padding: 0.8rem 0;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    font-size: 1.8rem;
+    font-weight: bold;
+    letter-spacing: 1px;
+    color: #ff4d4d;
+    text-decoration: none;
+    transition: color 0.2s;
+}
+
+.logo:hover {
+    color: #e43c3c;
+}
+
+nav {
+    display: flex;
+    gap: 1.5rem;
+    align-items: center;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    transition: background 0.2s;
+    font-size: 0.95rem;
+    white-space: nowrap;
+}
+
+nav a.active,
+nav a:hover {
+    background: #ff4d4d;
+    color: #fff;
+}
+
+.auth-buttons {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+
+.auth-buttons a {
+    color: #fff;
+    background: #ff4d4d;
+    border-radius: 4px;
+    padding: 0.5rem 1.2rem;
+    text-decoration: none;
+    font-weight: 500;
+    transition: background 0.2s;
+    font-size: 0.95rem;
+    white-space: nowrap;
+}
+
+.auth-buttons a.login-btn {
+    background: transparent;
+    border: 1px solid #fff;
+    color: #fff;
+}
+
+.auth-buttons a:hover {
+    background: #e43c3c;
+}
+
+.main-content {
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+}
+
+.page-title {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.cinemas-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+}
+
+.cinema-card {
+    background: #fff;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s;
+}
+
+.cinema-card:hover {
+    transform: translateY(-5px);
+}
+
+.cinema-image {
+    position: relative;
+    padding-top: 56.25%;
+    /* 16:9 Aspect Ratio */
+    overflow: hidden;
+}
+
+.cinema-image img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.cinema-info {
+    padding: 1.5rem;
+}
+
+.cinema-title {
+    font-size: 1.4rem;
+    color: #333;
+    margin-bottom: 1rem;
+}
+
+.cinema-details {
+    color: #666;
+    margin-bottom: 1rem;
+}
+
+.cinema-details p {
+    margin-bottom: 0.5rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.cinema-details i {
+    color: #ff4d4d;
+    width: 20px;
+}
+
+.view-schedule-btn {
+    display: inline-block;
+    background: #ff4d4d;
+    color: #fff;
+    padding: 0.8rem 1.5rem;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: 500;
+    transition: background 0.3s;
+    width: 100%;
+    text-align: center;
+}
+
+.view-schedule-btn:hover {
+    background: #e43c3c;
+}
+
+@media (max-width: 768px) {
+    .cinemas-grid {
+        grid-template-columns: 1fr;
+    }
+}
